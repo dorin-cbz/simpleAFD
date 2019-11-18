@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Automat Finit Deterministic</title>
+ <script src="simpleAFD.js"></script>
+</head>
+<body>
+  <div id="description" class="container">
+    <h1>Automat Finit Deterministic</h1>
+    <h3>Automat Finit Deterministic pentru expresia regulata: (0*1+)0?</h3>
+  </div>
+  <div id="DFA">
+    <input id="streamInput" label="Stream Input" value="01" onkeydown="if (event.keyCode == 13) { processInput()}">
+    <button onclick="processInput()">Testeaza sirul</button>
+  </div>
+  <div id="transitionDiv">
+    <ul id="transitionList">
+      
+    </ul>
+    <h3 id="results"></h3>
+  </div>
+  <br>
+  <div class="node-container" id="node-container">
+  </div>
+</body>
+</html>
